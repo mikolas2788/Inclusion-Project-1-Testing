@@ -4,15 +4,18 @@
 }
 
 .navbar {
-    background-color: white;
+    color: white;
+    background-color: rgb(209, 77, 77);
     height: 100px;
     width: 100%; 
-    font-size: 40px;
+    display: flex;
+    flex-direction: row;
 }
 
 .left {
     height: 100%; 
-    width: 100%;
+    width: 50%;
+    font-size: 30px;
     display: flex;
     justify-content: left;
     align-items: center;
@@ -21,6 +24,24 @@
 .left h1 {
     padding-left: 20px; 
 }
+
+.right {
+    height: 100%;
+    width: 50%;
+    font-size: 20px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.right a {
+    color: inherit; 
+    text-decoration: none;
+    padding-right: 30px; 
+}
+
+
 
 /* .navbar {
 
