@@ -1,5 +1,10 @@
+html {
+    scroll-behavior: smooth;
+}
+
 .page {
-    height: 1000px;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 1600px;
     width: 100%; 
 }
 
@@ -41,8 +46,111 @@
     padding-right: 30px; 
 }
 
+.main {
+    
+}
 
+.main section {
+    height: 600px; 
+    border-bottom: 1px solid; 
+}
+.main h1 {
+    padding: 15px 0 15px 0;
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+}
 
-/* .navbar {
+/* About */
+.about {
 
-} */
+}
+
+.about-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-left {
+    height: 100%;
+    width: 40%; 
+}
+
+.about-left img {
+    width: 300px; 
+    padding-left: 20px; 
+}
+.about-right {
+    height: 100%;
+    width: 60%; 
+    padding: 0 20px 0 20px;
+}
+
+/* Menu */
+.menu-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-left {
+    height: 100%;
+    width: 40%; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-left h3 {
+    padding-bottom: 10px; 
+}
+
+.menu-left img {
+    width: 250px; 
+    padding-left: 20px; 
+
+}
+
+.menu-middle {
+    height: 100%;
+    width: 50%; 
+    padding: 0 20px 0 20px;
+}
+
+.menu-right {
+    height: 100%;
+    width: 10%; 
+    padding: 0 10px 0 10px;
+}
+
+/* Reservations */
+.reservation-page {
+    width: 100%;
+}
+
+.reservation-content {
+    display: flex;
+    flex-direction: row;
+}
+
+.reservation-left {
+    width: 50%; 
+}
+
+.reservation-calendar {
+    padding-left: 20px; 
+}
+
+.reservation-right {
+    width: 50%; 
+}
+
+.reservation-form {
+    height: 300px; 
+    width: 30%; 
+    border: 3px black;
+}

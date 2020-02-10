@@ -7,4 +7,8 @@ const allReservations = () => {
         })
 }
 
+let reserveCalendar = new VanillaCalendar({
+    selector: "#reserveCalendar",
+    pastDates: false 
+})
 // console.log(document.querySelector('p').innerHTML);

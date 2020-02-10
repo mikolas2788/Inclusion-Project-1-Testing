@@ -8,7 +8,9 @@
   <link rel="shortcut icon" type="image/png" href="./assets/images/favicon.ico">
   <link href="assets/css/reset.css" rel="stylesheet" type="text/css">
   <link href="assets/css/style.css" rel="stylesheet" type="text/css">
-  <link href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/vanilla-calendar-min.css">
+  <script src="js/vanilla-calendar-min.js"></script>
+
   <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 </head>
 <body>
@@ -22,13 +24,78 @@
         </div>
       </div>
       <div class="right">
-        <a href="">About Us</a>
-        <a href="">Menu</a>
-        <a href="">Reservations</a>
+        <a href="#about">About Us</a>
+        <a href="#menu">Menu</a>
+        <a href="#reserve">Reservations</a>
       </div>
     </div>
     <div class="main">
-      <div class="reservations"></div>
+      <section id="about" class="about">
+        <div class="about-page">
+          <div class="about-top">
+            <h1>Our restaurant (The Real KFC)</h1>
+          </div>
+          <div class="about-content">
+            <div class="about-left">
+              <img src="./assets/images/highclass1.jpg" alt="">
+            </div>
+            <div class="about-right">
+              <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                magna
+                aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                Duis
+                aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="menu">
+        <div class="menu-page">
+          <div class="menu-top">
+            <h1>Menu</h1>
+          </div>
+          <div class="menu-content">
+            <div class="menu-left">
+              <h3 class="food-item">
+                Spicy Soy Garlic
+              </h3>
+              <img src="./assets/images/KFC.jpeg" alt="">
+            </div>
+            <div class="menu-middle">
+              <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                magna
+                aliqua."
+              </p>
+            </div>
+            <div class="menu-right">
+              <p>$15</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="reserve">
+        <div class="reservation-page">
+          <div class="reservation-top">
+            <h1>Reservations</h1>
+          </div>
+          <div class="reservation-content">
+            <div class="reservation-left">
+              
+              <div class="reservation-calendar">
+                <div id="reserveCalendar" class="vanilla-calendar"></div>
+              </div>
+            </div>
+            <div class="reservation-right">
+              <form class="reservation-form" action="">
+                Things
+              </form>
+            </div>
+          </div>
+        </div>
+
+      </section>
     </div>
     <div class="footer">
 
