@@ -55,7 +55,7 @@ html {
     border-bottom: 1px solid; 
 }
 .main h1 {
-    padding: 15px 0 15px 0;
+    padding: 20px 0 20px 0;
     font-size: 25px;
     display: flex;
     justify-content: center;
@@ -151,6 +151,31 @@ html {
 
 .reservation-form {
     height: 300px; 
-    width: 30%; 
+    width: 90%; 
     border: 3px black;
+    padding: 0 20px 20px 20px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.reservation-input-set {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding-right: 10px; 
+}
+
+.reservation-inputs {
+    width: 100px; 
+}
+
+.reservation-form h3 {
+    padding: 0 0 10px 0; 
+}
+
+.reservation-form input {
+    padding: 5px; 
+    font-size: 15px;
+    margin-bottom: 10px; 
 }
