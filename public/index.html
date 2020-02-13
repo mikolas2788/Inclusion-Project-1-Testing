@@ -98,7 +98,7 @@
                       id="dateSelector" 
                       placeholder="Pick from Calendar">
                   </div>
-                  <div class="reservation-input">
+                  <!-- <div class="reservation-input">
                     <h3>Time</h3>
                     <input 
                       type="text" 
@@ -107,26 +107,63 @@
                       placeholder="Click for Availability"
                       class="reservation-time"
                       >
+                  </div> -->
+                  <div class="reservation-input">
+                    <h3>Time</h3>
+                    <select class="reservation-time"name="" id="timeSelector">
+                      <option value="" hidden>Click for Availability</option>
+                      <option value="1:00">1:00</option>
+                      <option value="1:30">1:30</option>
+                      <option value="2:00">2:00</option>
+                      <option value="2:30">2:30</option>
+                      <option value="3:00">3:00</option>
+                      <option value="3:30">3:30</option>
+                      <option value="4:00">4:00</option>
+                      <option value="4:30">4:30</option>
+                      <option value="5:00">5:00</option>
+                      <option value="5:30">5:30</option>
+                      <option value="6:00">6:00</option>
+                      <option value="6:30">6:30</option>
+                      <option value="7:00">7:00</option>
+                      <option value="7:30">7:30</option>
+                      <option value="8:00">8:00</option>
+                      <option value="8:30">8:30</option>
+                      <option value="9:00">9:00</option>
+                      <option value="9:30">9:30</option>
+                      <option value="10:00">10:00</option>
+                    </select>
                   </div>
                 </div>
                 <div class="reservation-input-set">
                   <div class="reservation-input">
                     <h3>First Name</h3>
-                    <input type="text" id="">
+                    <input type="text" id="firstNameSelector">
                   </div>
                   <div class="reservation-input">
                     <h3>Last Name</h3>
-                    <input type="text" id="">
+                    <input type="text" id="lastNameSelector">
                   </div>
                 </div>
                 <div class="reservation-input-set">
                   <div class="reservation-input">
                     <h3>Email</h3>
-                    <input type="text" id="">
+                    <input type="text" id="emailSelector">
                   </div>
                   <div class="reservation-input">
                     <h3>Guest Count</h3>
-                    <input type="text" id="">
+                    <input type="text" id="guestCountSelector">
+                  </div>
+                </div>
+                <div class="reservation-input-set">
+                  <div class="reservation-input">
+                    <button 
+                      type="button"
+                      class="reservation-submit"
+                      value=""
+                      onclick="reservationSubmit(calendarDate)"
+                      >
+                      Submit Reservation
+                    </button>
                   </div>
                 </div>
               </form>

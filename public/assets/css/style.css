@@ -10,7 +10,7 @@ html {
 
 .navbar {
     color: white;
-    background-color: rgb(209, 77, 77);
+    background-color: teal;
     height: 100px;
     width: 100%; 
     display: flex;
@@ -51,7 +51,7 @@ html {
 }
 
 .main section {
-    height: 600px; 
+    min-height: 500px; 
     border-bottom: 1px solid; 
 }
 .main h1 {
@@ -94,6 +94,7 @@ html {
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    border-bottom: 1px grey;
 }
 
 .menu-left {
@@ -135,23 +136,27 @@ html {
 .reservation-content {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap; 
+    justify-content: center;
+    align-items: center;
 }
 
 .reservation-left {
-    width: 50%; 
+    min-width: 45%; 
+    margin-right: 10px; 
 }
 
 .reservation-calendar {
-    padding-left: 20px; 
+    /* padding-left: 20px;  */
 }
 
 .reservation-right {
-    width: 50%; 
+    min-width: 45%; 
 }
 
 .reservation-form {
     height: 300px; 
-    width: 90%; 
+    width: 95%; 
     border: 3px black;
     padding: 0 20px 20px 20px; 
     display: flex;
@@ -163,12 +168,7 @@ html {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    padding-right: 10px; 
 }
-
-/* .reservation-input {
-    width: 100px; 
-} */
 
 .reservation-form h3 {
     padding: 0 0 10px 0; 
@@ -178,4 +178,26 @@ html {
     padding: 5px; 
     font-size: 15px;
     margin-bottom: 10px; 
+}
+
+.reservation-time {
+    height: 32px; 
+    width: 181px; 
+    background-color: #ffffff;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(170, 170, 170);
+}
+
+select {
+    text-align-last: center;
+}
+
+.reservation-submit {
+    background-color: teal;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    height: 35px; 
+    width: 150px; 
 }
